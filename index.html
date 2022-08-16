@@ -61,7 +61,7 @@
         <div class="bg-image">
           <div class="container">
             <h1 class="index-h1">Ефективні рішення для вашого бізнесу</h1>
-            <button class="order-button" type="button">Замовити послугу</button>
+            <button data-modal-open class="order-button" type="button">Замовити послугу</button>
           </div>
         </div>
       </section>
@@ -126,29 +126,32 @@
         <div class="container">
           <h2 class="index-h2">Чим ми займаємося</h2>
           <ul class="job-pictures list">
-            <li>
+            <li class="job-pictures-item">
               <img
                 src="./images/img1.jpg"
                 alt="Комп'ютерні програми"
                 width="370"
                 height="294"
               />
+              <h3 class="job-pictures-text">Десктопні додатки</h3>
             </li>
-            <li>
+            <li class="job-pictures-item">
               <img
                 src="./images/img2.jpg"
                 alt="Мобільні додатки"
                 width="370"
                 height="294"
               />
+              <h3 class="job-pictures-text">Мобільні додатки</h3>
             </li>
-            <li>
+            <li class="job-pictures-item">
               <img
                 src="./images/img3.jpg"
                 alt="Додатки для планшетів"
                 width="370"
                 height="294"
               />
+              <h3 class="job-pictures-text">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -442,5 +445,14 @@
         </div>
       </div>
     </footer>
+    <!-- Backdrop and modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        
+        <button type="button" data-modal-close class="modal-close-btn"></button>
+      </div>
+    </div>
+    <!-- Connect modal.js -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
